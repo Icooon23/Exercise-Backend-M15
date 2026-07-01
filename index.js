@@ -26,7 +26,7 @@ conn.connect((err) => {
 app.use(express.static('public'));
 
 app.get('/quotes', (req, res) => {
-    res.sendFile(__dirname + '/quotes.html');
+    res.sendFile(__dirname + '/public/quotes.html');
 });
 
 app.get('/api/quotes', (req, res) => {
